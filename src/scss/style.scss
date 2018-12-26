@@ -8,10 +8,63 @@
     header {
         height: rem(40px);
         width: 100%;
+        @include box_flex;
+        @include justify(space-between);
+        @include sizing;
+        padding: 0 rem(10px);
+        @include align;
+        div:nth-child(1) {
+            font-size: rem(15px);
+        }
+        div:nth-child(2) {
+            width: rem(85px);
+            height: rem(28px);
+            border: 1px solid #ccc;
+            border-radius: rem(28px);
+            @include sizing;
+            padding: rem(4px) 0;
+            @include box_flex;
+            @include align;
+            i.iconfont {
+                font-size: rem(16px);
+                text-align: center;
+                @include flex;
+            }
+            i.iconfont:nth-child(1) {
+                font-size: rem(16px);
+                @include sizing;
+                border-right: 1px solid #ccc;
+            }
+        }
     }
     section {
         width: 100%;
         @include flex;
+        overflow: hidden;
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            .swiper-wrapper {
+                height: 100%;
+                .shouye {
+                    height: 100%;
+                }
+                .dingdan {
+                    background: green;
+                    height: 100%;
+                    line-height: rem(100px);
+                    text-align: center;
+                    font-size: rem(50px);
+                }
+                .wode {
+                    background: yellow;
+                    height: 100%;
+                    line-height: rem(100px);
+                    text-align: center;
+                    font-size: rem(50px);
+                }
+            }
+        }
     }
     footer {
         width: 100%;

@@ -17,9 +17,32 @@
 <body>
     <div class="wrapper">
         <header>
-
+            <div>美团外卖</div>
+            <div>
+                <i class="iconfont icon-gengduo"></i>
+                <i class="iconfont icon-guangpan"></i>
+            </div>
         </header>
         <section>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide shouye">
+                        <div class="search">
+                            <div>
+                                <i class="iconfont icon-fangdajing"></i>
+                                <input type="text" placeholder="米线">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide dingdan">
+                        订单
+                    </div>
+                    <div class="swiper-slide wode">
+                        我的
+                    </div>
+                </div>
+
+            </div>
 
         </section>
         <footer>
@@ -43,6 +66,9 @@
             </dl>
         </footer>
     </div>
+    <script>
+        var swiper1 = new Swiper('.swiper-container');
+    </script>
 </body>
 
 </html>

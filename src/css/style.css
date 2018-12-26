@@ -197,12 +197,96 @@ html {
 .wrapper header {
   height: 1.06667rem;
   width: 100%;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 0.26667rem;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.wrapper header div:nth-child(1) {
+  font-size: 0.4rem;
+}
+
+.wrapper header div:nth-child(2) {
+  width: 2.26667rem;
+  height: 0.74667rem;
+  border: 1px solid #ccc;
+  border-radius: 0.74667rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0.10667rem 0;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.wrapper header div:nth-child(2) i.iconfont {
+  font-size: 0.42667rem;
+  text-align: center;
+  -webkit-flex: 1 1 0%;
+  flex: 1 1 0%;
+}
+
+.wrapper header div:nth-child(2) i.iconfont:nth-child(1) {
+  font-size: 0.42667rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  border-right: 1px solid #ccc;
 }
 
 .wrapper section {
   width: 100%;
   -webkit-flex: 1 1 0%;
   flex: 1 1 0%;
+  overflow: hidden;
+}
+
+.wrapper section .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper section .swiper-container .swiper-wrapper {
+  height: 100%;
+}
+
+.wrapper section .swiper-container .swiper-wrapper .shouye {
+  height: 100%;
+}
+
+.wrapper section .swiper-container .swiper-wrapper .dingdan {
+  background: green;
+  height: 100%;
+  line-height: 2.66667rem;
+  text-align: center;
+  font-size: 1.33333rem;
+}
+
+.wrapper section .swiper-container .swiper-wrapper .wode {
+  background: yellow;
+  height: 100%;
+  line-height: 2.66667rem;
+  text-align: center;
+  font-size: 1.33333rem;
 }
 
 .wrapper footer {
